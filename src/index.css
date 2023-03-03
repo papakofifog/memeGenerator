@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #672280 ;
+  color: white;
+  align-items: center;
+  margin: 0;
+  box-shadow: 0px 5px 2px #672280 ;
+}
+
+.header--brand{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1 150px;
+  justify-content: flex-start;
+}
+
+.header--courseName{
+  display: flex;
+  flex: 1 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+.inputs{
+  border: 1px silver solid;
+  height: 2.19rem;
+  width: 14.38rem;
+  
+}
+
+.btn{
+  width: auto;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex{
+  display: flex;
+}
+
+.inputsFlex{
+  justify-self: center;
+  gap: 1.6rem;
+}
+
+.memeForm{
+  margin-top: 6.25rem;
+}
+
+.memebtn{
+  width: 29.81rem ;
+  background-color: #711F8D;
+  color: #fff;
+  margin-top: 3.125rem;
+
+}
+
+.memeImage{
+  margin-top: 3.125rem;
+  height: 16.75rem;
+  width: 29.81rem;
+  border-style: hidden;
+}
