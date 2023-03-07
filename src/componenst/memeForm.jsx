@@ -1,10 +1,12 @@
-import React from "react";
+import {React, useState} from "react";
 import Input from "./Input";
 import Button from "./Button";
 import Image from "./Image";
 import memesData from "../assets/memesData";
 
 export default function MemeForm(){
+    const [image, setImage]= useState('')
+
     function newRandomNumber(){
         return Math.floor(Math.random()* (memesData.data.memes.length-0+1)) + 0;
     }
@@ -12,7 +14,7 @@ export default function MemeForm(){
     function handleMemeSelection(){
         let randomNumber= newRandomNumber();
         let randomMeme=memesData.data.memes[randomNumber];
-        console.log(randomMeme);
+        return setImage(randomMeme.url);
     }
 
     return (
@@ -26,7 +28,7 @@ export default function MemeForm(){
                 onClick={handleMemeSelection}
                 />
             </div>
-            <Image />
+            <Image Image={image} />
             
         </div>
     );
