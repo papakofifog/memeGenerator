@@ -14,7 +14,9 @@ export default function MemeForm(){
     function handleMemeSelection(){
         let randomNumber= newRandomNumber();
         let randomMeme=memesData.data.memes[randomNumber];
-        return setImage(randomMeme.url);
+        setImage(function(){
+            return randomMeme.url;
+        });
     }
 
     return (
