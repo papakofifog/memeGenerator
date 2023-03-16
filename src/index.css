@@ -72,13 +72,53 @@ body{
   background-color: #711F8D;
   color: #fff;
   margin-top: 3.125rem;
+  margin-bottom: 1.125rem;
 
 }
 
+.meme{
+  position: relative;
+  margin-top: 10px;
+}
+
 .memeImage{
-  margin-top: 3.125rem;
+  
   height: 16.75rem;
   width: 29.81rem;
   border-style: hidden;
   border-radius: 10px;
 }
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
